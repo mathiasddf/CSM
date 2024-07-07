@@ -22,12 +22,19 @@ h1 {
     display: block;
     margin: 10px 0;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
 
 }
 
 #seguimientoForm button {
     background-color: #45a049;
     object-position: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 5px;
 }
 
 #resultado {
@@ -73,4 +80,21 @@ a{
     width: 560px;
     height: 45px;
     pointer-events: auto;
+}
+.regresa{
+    border: none; 
+    color: rgb(255, 255, 255); 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-flex;
+    background-color: rgba(9, 11, 134, 0.9); 
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: 620px;
+}
+.regresa:hover{
+    background-color: #45a049;
 }

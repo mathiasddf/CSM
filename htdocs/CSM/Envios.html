@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realizar un envio</title>
+    <link rel="stylesheet" href="./styleEnvios.css">
 </head>
 <body>
     <h1>Realizar un nuevo envio</h1>
+    <div class="img1">
+    <img src="./imgs slide//fecha-servicio-entrega-mensajeria-envio-camiones-telefono-inteligente-movil-sobre-fondo-azul_420121-.png" />
+    </div>
     <form id="formulario" action="/cgi-bin/cliente.pl" method="post" onsubmit="return confirmarEnvio()">
         <!-- Campo oculto para el usuario_id que se extraerá de la URL -->
         <input type="hidden" name="usuario_id" id="usuario_id" value="">
@@ -44,15 +48,15 @@
             <option value="la_union">La Union</option>
         </select>
 
-        <button type="button" onclick="calcularMonto()">Calcular Monto</button>
-        <div id="monto-estimado" ></div>
-
+        <button type="button"  class="Monto" onclick="calcularMonto()">Calcular Monto</button> <br>
+ 
         <!-- Botón de Confirmar Envío siempre visible -->
-        <button type="submit" onclick="return confirmarEnvio()">Confirmar Envío</button>
+        <button class="confirmar" type="submit" onclick="return confirmarEnvio()">Confirmar Envío</button>
+        <div id="monto-estimado" ></div>
+        <hr>
+        <a href="/cgi-bin/logout.pl" class="cerrar">Cerrar Sesión</a>
     </form>
-    <form action="/cgi-bin/logout.pl" method="post">
-        <button type="submit">Cerrar Sesión</button>
-    </form>
+
 
     <script src="js/envios.js"></script>
 </body>
