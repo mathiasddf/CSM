@@ -1,10 +1,13 @@
 body {
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-minimalista-degradado_23-2149974328.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
