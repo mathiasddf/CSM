@@ -23,8 +23,8 @@ my $descripcion = $cgi->param('descripcion');
 
 # Configuración de la base de datos
 my $dsn = "DBI:mysql:database=EncomiendasCSM;host=localhost";
-my $db_username = 'alumno';
-my $db_password = 'pweb1';
+my $db_username = 'root';
+my $db_password = '';
 
 # Conectar a la base de datos
 my $dbh = DBI->connect($dsn, $db_username, $db_password)or die "No se pudo conectar ";
