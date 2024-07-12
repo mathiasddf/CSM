@@ -76,7 +76,7 @@ if ($data->{estado} ne $sth->{estado}) {
     $update_sth->execute($data->{estado}, $numero_seguimiento);
     $update_sth->finish;
 }
-
+$data->{estado} = 'pendiente';
 # Imprimir la cabecera JSON
 print $cgi->header('application/json; charset=UTF-8');
 

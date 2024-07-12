@@ -30,15 +30,24 @@ h1 {
 
 #seguimientoForm button {
     background-color: #45a049;
-    object-position: center;
     text-align: center;
-    align-items: center;
-    margin-left: 650px;
-    margin-top: 5px;
+    margin: 5px auto;
+    display: block; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 16px; 
 }
 
+#seguimientoForm button:hover {
+    background-color: #3e8e41; 
+}
+
+
 #resultado {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -67,7 +76,7 @@ a{
     display: flex;
     -webkit-tap-highlight-color: transparent;
     margin-top: 50px;
-    margin-left: 360px;
+    margin-left: 30%;
     padding-inline-start: 10px;
     padding-inline-end: 75px;
     border-radius: 100px;
@@ -93,7 +102,7 @@ a{
     padding: 15px;
     width: 100px;
     text-decoration: none;
-    margin-left: 620px;
+    margin-left: 46%;
 }
 .regresa:hover{
     background-color: #45a049;
